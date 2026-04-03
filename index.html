@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="floating-elements">
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container">
+        <div class="gift-section" id="giftBox">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-gift pulse"></i>
+            </div>
+            <h2>Click to open your surprise!</h2>
+        </div>
+
+        <div class="message-section hidden" id="mainMessage">
+            <i class="fa-solid fa-heart heart-icon"></i>
+            <h1>Happy Birthday!</h1>
+            <p>To an amazing friend who makes everything better just by being there. Here's to a day as wonderful as you are!</p>
+            <div class="sparkles">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-cake-candles"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

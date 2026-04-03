@@ -1,0 +1,86 @@
+/* style.css */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 3rem;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    width: 85%;
+    max-width: 450px;
+}
+
+.icon-wrapper i {
+    font-size: 5rem;
+    color: #ff6b6b;
+    cursor: pointer;
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.message-section h1 {
+    color: #4a4e69;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.message-section p {
+    color: #9a8c98;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.heart-icon {
+    font-size: 3rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.sparkles {
+    margin-top: 2rem;
+    color: #ffd166;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Floating background circles */
+.floating-elements span {
+    position: absolute;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.floating-elements span:nth-child(1) { width: 100px; height: 100px; top: 10%; left: 10%; animation: float 6s infinite; }
+.floating-elements span:nth-child(2) { width: 150px; height: 150px; bottom: 10%; right: 10%; animation: float 8s infinite; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
